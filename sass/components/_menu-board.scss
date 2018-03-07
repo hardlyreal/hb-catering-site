@@ -1,0 +1,134 @@
+.menu-board {
+  background: $color-grey-light;
+  padding: 2rem;
+  // border-radius: 3px;
+
+  &__item {
+    background-color: rgba($color-grey-light-2, $alpha: 1);
+    // padding: 1rem;
+    box-shadow: 0 1rem 7rem rgba(0,0,0, .1);
+    border-radius: 3px;
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    &--main {
+      display: flex;
+      align-items: center;
+      padding: 2rem;
+    }
+
+    &--link {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1rem 2rem 2rem 2rem;
+      
+      & a:link,
+      & a:visited {
+        text-decoration: none;
+        color: $color-primary; 
+        border-bottom: 1px solid $color-primary;
+      }
+    }
+
+    &--description {
+      // background: $color-grey-light;
+      padding: 1.5rem 1rem;
+      display: none;
+      
+    }
+  }
+}
+
+.menu-item-title {
+  margin-right: auto;
+  text-transform: uppercase;
+  font-family: $font-heading;
+  font-size: 2rem;
+}
+
+.menu-btn {
+  border: none;
+  border-radius: 300px;
+  background-color: $color-primary;
+  padding: 1rem 2rem;
+  color: $color-grey-light-2;
+  text-transform: uppercase;
+  font-family: $font-heading;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .2s;
+
+  &:hover {
+    opacity: .8
+  }
+}
+
+.section-id {
+  margin-bottom: 2rem;
+  &__title {
+    font-weight: 700;
+    font-family: $font-heading;
+    font-size: 3.2rem;
+    text-transform: uppercase;
+
+    & span {
+      font-weight: 300;
+      font-size: 2rem;
+      text-transform: none;
+    }
+  }
+}
+
+.visible {
+  display: block;
+}
+
+.remove-btn {
+  background-color: red;
+}
+
+.disabled {
+  background-color: $color-grey-light-2;
+  box-shadow: none;
+  border: 2px solid $color-grey-light-2;
+  // border-style: inset;
+}
+
+.guest-container {
+  margin: 3rem 0;
+}
+.input {
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  border: 2px solid $color-primary;
+  border-radius: 3px;
+  display: block;
+}
+
+.guest-input:focus {
+  outline: green;
+}
+
+.total-input {
+  margin-top: 2rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  background: #fff;
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .menu-board {
+    width: 80%;
+    margin: 0 auto;
+    
+
+    // &__items {
+    //   display: grid;
+    // grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-rows: auto;
+    // grid-gap: 2rem; 
+    // }
+  }
+} 
